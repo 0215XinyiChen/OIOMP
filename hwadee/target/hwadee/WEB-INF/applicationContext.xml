@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="example"/>
+
+    <context:component-scan base-package="example.controller"/>
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName"><value>com.mysql.cj.jdbc.Driver</value></property>
+        <property name="url"><value>jdbc:mysql://localhost:3306/ocomp?serverTimezone=GMT%2B8</value></property>
+        <property name="username"><value>root</value></property>
+        <property name="password"><value>wocao412721</value></property>
+    </bean>
+    <!-- 配置Jdbc模板 -->
+    <bean class="org.springframework.jdbc.core.JdbcTemplate"
+          id="jdbcTemplate" p:dataSource-ref="dataSource"/>
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+          p:dataSource-ref="dataSource"/>
+</beans>
