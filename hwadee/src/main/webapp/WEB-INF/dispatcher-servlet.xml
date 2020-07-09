@@ -21,7 +21,7 @@
     <mvc:resources mapping="/js/**" location="/statics/js/"/>
     <mvc:resources mapping="/image/**" location="/statics/image/"/>
 
-<!--    <mvc:resources location="/views" mapping="/*.html"/>-->
+    <mvc:resources location="/views" mapping="/*.html"/>
 
     <!-- 对模型视图名称的解析，即在模型视图名称添加前后缀(如果最后一个还是表示文件夹,则最后的斜杠不要漏了) 使用JSP-->
     <!-- 默认的视图解析器 在上边的解析错误时使用 (默认使用html)- -->
@@ -31,6 +31,7 @@
         <property name="suffix" value=".jsp"/>
         <property name="exposeContextBeansAsAttributes" value="true"/>
     </bean>
+
 
     <!-- 自动扫描装配 -->
     <context:component-scan base-package="example.controller"/>
