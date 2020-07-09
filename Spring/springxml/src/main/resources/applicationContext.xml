@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<bean id="edao" class="com.hwadee.spring.dao.EmpDAO"/>-->
+    <!--<bean id="hrService" class="com.hwadee.spring.service.HrService">-->
+        <!--&lt;!&ndash; 在IoC容器初始化时，Spring会自动通过setEmpDAO方法将edao对象注入到empDAO-->
+        <!--属性中&ndash;&gt;-->
+        <!--<property name="empDAO" ref="edao"/>-->
+    <!--</bean>-->
+    <bean id="edao" class="com.hwadee.spring.dao.EmpDAO"/>
+    <bean id="edaoe" class="com.hwadee.spring.dao.EmpDAOExt"/>
+    <bean id="hrService" class="com.hwadee.spring.service.HrService">
+        <!-- 在IoC容器初始化时，Spring会自动通过setEmpDAO方法将edao对象注入到empDAO
+        属性中-->
+        <property name="empDAO" ref="edaoe"/>
+    </bean>
+
+</beans>
