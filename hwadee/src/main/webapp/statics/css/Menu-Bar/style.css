@@ -11,11 +11,11 @@ html {
 }
 
 .sidebar {
-    width: 250px;
+    width: 20%;
     height: 100%;
     position: fixed;
-    background: url("http://themes.mediacreed.com/html/synergy/assets/patterns/menu/menu_pattern_1.png");
-    border-right: 10px solid #d00355;
+    background: url("http://yun.uzaisoft.com/images/bg-01.jpg");
+    border-right: 1px solid #d00355;
 }
 .sidebar ul {
     margin-top: 30px;
@@ -40,7 +40,8 @@ html {
     height: 40px;
     top: 0px;
     left: 0px;
-    background: #d00355;
+    background: #F08080;
+    /*background: #d00355;*/
     z-index: 0;
     opacity: 0;
 }
@@ -59,7 +60,7 @@ html {
     padding: 0px;
     width: 220px;
     display: none;
-    background: url("http://themes.mediacreed.com/html/synergy/assets/patterns/menu/menu_pattern_1.png");
+    background: url("http://yun.uzaisoft.com/images/bg-01.jpg");
 }
 .sidebar .sub-menu li a {
     padding-left: 20px;

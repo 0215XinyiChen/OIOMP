@@ -8,7 +8,7 @@
 
     <!--web默认启动的页面-->
     <welcome-file-list>
-        <welcome-file>views/login.jsp</welcome-file>
+        <welcome-file>views/test/test.jsp</welcome-file>
     </welcome-file-list>
 
     <servlet-mapping>

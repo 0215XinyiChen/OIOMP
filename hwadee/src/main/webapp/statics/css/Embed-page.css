@@ -1,0 +1,21 @@
+.page-wrapper{
+    width: 79.6%;
+    height: 100%;
+    position: relative;
+    /*float: right;*/
+    /*top: 0px;*/
+    /*right: 1%;*/
+    /*bottom: 0px;*/
+    left: 20%;
+    z-index: -1;
+}
+iframe{
+    width: 100%;
+    height: 99%;
+    position: relative;
+    overflow: hidden;
+}
+body{
+    height: 100%;
+    width: 100%;
+}

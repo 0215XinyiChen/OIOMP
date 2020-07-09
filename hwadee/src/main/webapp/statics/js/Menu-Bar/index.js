@@ -1,4 +1,13 @@
 
+function test(id) {
+    //alert(id);
+    var pageUrl=document.getElementById("content");
+    switch (id) {
+        case "test1":pageUrl.src("../views/test1.jsp");alert(id);break;
+        case "test2.1":pageUrl.src("../views/test2-1.jsp");alert(id);break;
+    }
+}
+
 $( "li" ).hover(
     function() {
         $(this).find("a").css("color","#FFF");
@@ -20,3 +29,15 @@ $( "li" ).hover(
         })
     }
 );
+
+/*
+$( "i" ).click(function () {
+    var item = $(this).href;
+    alert("var");
+    if(item=="1"){
+        alert("var");
+    }
+    else if(item=="2"){
+        alert("var");
+    }
+})*/
