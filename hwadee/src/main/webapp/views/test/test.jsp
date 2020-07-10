@@ -11,9 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-    <div style="font-size: 30px">个人信息</div>
+    <div style="font-size: 30px"><strong>这是首页</strong></div>
     <hr />
-    <div>出生日期：</div>
-    <input type="text" name="username" value="横线形式显示" size="12" style="border:0px;border-bottom:#000000 1px solid;">
+    <div>个人信息</div>
+<%--    <input type="text" name="username" value="横线形式显示" size="12" style="border:0px;border-bottom:#000000 1px solid;">--%>
 </body>
 </html>
